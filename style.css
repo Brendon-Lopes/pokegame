@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3B4CCA;
 }
 
 .header {
@@ -26,6 +31,27 @@
   width: 200px;
 }
 
-body {
-  background-color: #3B4CCA;
+.main-container {
+  height: 40em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.pokemon-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25em;
+  width: 25em;
+  background-color: rgb(16, 30, 92);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 139, 0.61);
+}
+
+.pokemon-name {
+  font-size: 2.5em;
+  color: white;
 }
