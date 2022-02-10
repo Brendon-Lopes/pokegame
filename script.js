@@ -1,4 +1,5 @@
 const pokemonFrame = document.querySelector('.pokemon-frame');
+const message = document.querySelector('.catch-message');
 const btn = document.querySelector('.random-button');
 
 const randomId = () => {
@@ -14,17 +15,18 @@ const fetchData = async (id) => {
   return data;
 }
 
-const pokemonImage = async () => {
+const pokemonImageAndName = async () => {
   const id = randomId();
-  console.log(id);
   const data = await fetchData(id);
 
   const image = document.createElement('img');
   image.className = 'pokemon-image';
   image.src = data.sprites.other['official-artwork'].front_default;
-
   if(pokemonFrame.firstChild) pokemonFrame.firstChild.remove();
   pokemonFrame.appendChild(image);
+
+  const name = data.name;
+  message.innerText = `Congratulations! You caught ${data.name}`;
 }
 
-btn.addEventListener('click', pokemonImage);
+btn.addEventListener('click', pokemonImageAndName);
