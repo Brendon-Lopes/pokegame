@@ -35,23 +35,57 @@ body {
   height: 40em;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  /* border: 1px solid red; */
+  margin-top: 2em;
 }
 
 .pokemon-frame {
+  margin-top: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 25em;
   width: 25em;
-  background-color: rgb(16, 30, 92);
+  background-color: rgb(15, 31, 104);
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(0, 0, 139, 0.61);
 }
 
-.pokemon-name {
-  font-size: 2.5em;
+.catch-message {
+  margin-top: 0.5em;
+  font-size: 2.2em;
   color: white;
+  text-align: center;
+}
+
+.random-button {
+  margin-top: 2em;
+  border: none;
+  padding: 15px 18px;
+  font-size: 1.5em;
+  border: 2px solid darkblue;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #CC0000;
+  opacity: 0.8;
+  color: white;
+  transition: 0.5s ease-out;
+}
+
+.random-button:hover {
+  opacity: 1;
+}
+
+.random-button:active {
+  background-color: #920000;
+  transition: 0s;
+}
+
+.footer {
+  height: 90px;
+  background-color: #CC0000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 5px solid darkblue;
 }
