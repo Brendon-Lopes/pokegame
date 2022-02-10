@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.header {
+  display: flex;
+  background-color: #CC0000;
+  padding: 10px;
+  flex-wrap: wrap;
+  box-shadow: 0 5px 8px darkblue;
+}
+
+.pokemon-logo {
+  width: 200px;
+}
+
+.title {
+  color: white;
+  margin: auto;
+  font-size: 2em;
+}
+
+.header-space-control {
+  width: 200px;
+}
+
+body {
+  background-color: #3B4CCA;
+}
