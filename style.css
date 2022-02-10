@@ -9,6 +9,9 @@ body {
   background-color: #3B4CCA;
   background-image: url(https://guikao.files.wordpress.com/2012/01/pokemon_wallpaper01_1680.jpg);
   background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -34,11 +37,11 @@ body {
 }
 
 .main-container {
-  height: 40em;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 2em;
+  flex-grow: 5;
 }
 
 .pokemon-frame {
@@ -89,10 +92,16 @@ body {
 }
 
 .footer {
+  margin-top: 2em;
   height: 90px;
   background-color: #CC0000;
-  position: fixed;
-  bottom: 0;
   width: 100%;
   border-top: 5px solid darkblue;
+}
+
+.footer .footer-text {
+  padding: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  color: white;
 }
