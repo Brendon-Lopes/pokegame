@@ -1,1 +1,1 @@
-# pokegame
+# Catch a random pokémon!
