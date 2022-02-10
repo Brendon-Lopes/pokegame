@@ -7,6 +7,8 @@
 
 body {
   background-color: #3B4CCA;
+  background-image: url(https://guikao.files.wordpress.com/2012/01/pokemon_wallpaper01_1680.jpg);
+  background-position: center;
 }
 
 .header {
@@ -51,10 +53,15 @@ body {
   box-shadow: 5px 5px 5px rgba(0, 0, 139, 0.61);
 }
 
+.pokemon-image {
+  width: 20em;
+}
+
 .catch-message {
   margin-top: 0.5em;
   font-size: 2.2em;
-  color: white;
+  color: darkblue;
+  font-weight: 600;
   text-align: center;
 }
 
