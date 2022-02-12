@@ -40,7 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2em;
+  margin-top: 1em;
   flex-grow: 5;
 }
 
@@ -49,23 +49,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 25em;
-  width: 25em;
+  height: 30em;
+  width: 30em;
   background-color: rgb(15, 31, 104);
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(0, 0, 139, 0.61);
 }
 
 .pokemon-image {
-  width: 20em;
+  max-width: 80%;
 }
 
 .catch-message {
   margin-top: 0.5em;
   font-size: 2.2em;
   color: darkblue;
-  font-weight: 600;
+  font-weight: bold;
   text-align: center;
+  text-shadow:
+    2px 0 0 #fff,
+    -2px 0 0 #fff,
+    0 2px 0 #fff,
+    0 -2px 0 #fff,
+    1px 1px #fff,
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff;
 }
 
 .random-button {
@@ -104,4 +113,112 @@ body {
   text-align: center;
   font-size: 1.2em;
   color: white;
+}
+
+@media screen and (max-width: 1366px) {
+  .pokemon-logo {
+    width: 100px;
+  }
+
+  .header-space-control {
+    width: 100px;
+  }
+
+  .title {
+    font-size: 1.6em;
+  }
+
+  .main-container {
+    margin-top: 0em;
+  }
+
+  .pokemon-frame {
+    width: 20em;
+    height: 20em;
+  }
+
+  .catch-message {
+    font-size: 1.4em;
+  }
+
+  .random-button {
+    margin-top: 1em;
+    font-size: 1.2em;
+  }
+
+  .footer .footer-text{
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 912px) { /* 912px and below */
+  .pokemon-frame {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .catch-message {
+    font-size: 2.5em;
+    min-height: 90px;
+  }
+
+  .random-button {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 600px) { /* 600px and below */
+  .pokemon-logo {
+    width: 80px;
+  }
+
+  .title {
+    font-size: 1.2em;
+  }
+
+  .main-container {
+    margin-top: 0.5em;
+  }
+
+  .pokemon-frame {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .catch-message {
+    font-size: 1.8em;
+    min-height: 100px;
+  }
+
+  .random-button {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 360px) { /* 360px and below */
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pokemon-logo {
+    width: 90px;
+  }
+
+  .title {
+    font-size: 1.2em;
+  }
+
+  .catch-message {
+    font-size: 1.3em;
+    min-height: 70px;
+  }
+
+  .random-button {
+    font-size: 1.2em;
+  }
+
+  .footer .footer-text {
+    font-size: 1em;
+  }
 }
